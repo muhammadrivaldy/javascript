@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Statements</title>
+</head>
+<body>
+    <h2>This is an example of Javascript Statements</h2>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        var a, b;
+        a = 2; b = 3; 
+        c = a + b;
+
+        document.getElementById("demo1").innerHTML = "This value is " + c;
+        document.getElementById("demo2").innerHTML = "Javascript World!";
+
+        function demo() {
+            document.getElementById("demo3").innerHTML = "I'm programmer happy";
+            document.getElementById("demo4").innerHTML = "I want to learn a Javascript";
+        }
+    </script>
+
+    <button type="button" onclick="demo()">Click in here!</button>
+
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+</body>
+</html>
