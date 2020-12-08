@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <p id="name"></p>
+    <p id="address"></p>
+    <script>
+        var method = {
+            name: "Muhammad Rivaldy",
+            address: "Jl. H. Juanda, Depok",
+            getname: function() {
+                return this.name
+            },
+            getaddress: function() {
+                return this.address
+            }
+        }
+
+        document.getElementById("name").innerHTML = method.getname()
+        document.getElementById("address").innerHTML = method.getaddress()
+    </script>
+</body>
+</html>
