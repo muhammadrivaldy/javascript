@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <p id="slice">This is slice function : </p>
+    <p id="substring">This is substring function : </p>
+    <p id="substr">This is substr function : </p>
+    <p id="replace">This is replace function : </p>
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        document.getElementById("slice").innerHTML += str.slice(7, 13);
+        document.getElementById("substring").innerHTML += str.substring(7, 13);
+        document.getElementById("substr").innerHTML += str.substr(7, 6)
+        document.getElementById("replace").innerHTML += str.replace("Apple", "Greep")
+    </script>
+</body>
+</html>

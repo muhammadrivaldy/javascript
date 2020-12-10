@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <p id="indexof">This is a indexOf function : </p>
+    <p id="lastindexof">This is a lastIndexOf function : </p>
+    <p id="search">This is a search function : </p>
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        document.getElementById("indexof").innerHTML += str.indexOf("locate");
+        document.getElementById("lastindexof").innerHTML += str.lastIndexOf("locate");
+        document.getElementById("search").innerHTML += str.search("locate");
+    </script>
+</body>
+</html>

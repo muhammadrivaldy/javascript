@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <h2>Array Methods</h2>
+    <p id="toString">This is toString : </p>
+    <p id="join">This is join : </p>
+    <p id="pop">This is pop : </p>
+    <p id="push">This is push : </p>
+    <p id="shift">This is shift : </p>
+    <p id="unshift">This is unshift : </p>
+
+    <script>
+        var arr = ["Semangka", "Apel", "Jeruk", "Melon"];
+        document.getElementById("toString").innerHTML += arr.toString();
+        document.getElementById("join").innerHTML += arr.join(" - ");
+        arr.pop();
+        document.getElementById("pop").innerHTML += arr.toString();
+        arr.push("Anggur", "Strawberry");
+        document.getElementById("push").innerHTML += arr.toString();
+        arr.shift();
+        document.getElementById("shift").innerHTML += arr.toString();
+        arr.unshift("Jambu");
+        document.getElementById("unshift").innerHTML += arr.toString();
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sort</title>
+</head>
+<body>
+    <h2>Array Sort</h2>
+    <p id="sort">This is example sort : </p>
+    <p id="reverse">This is example reverse : </p>
+    <p id="sort-numeric-asc">This is example sort numeric asc : </p>
+    <p id="sort-numeric-dsc">This is example sort numeric dsc : </p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var points = [40, 100, 1, 5, 25, 10];
+
+        document.getElementById("sort").innerHTML += fruits.sort();
+        document.getElementById("reverse").innerHTML += fruits.reverse();
+        document.getElementById("sort-numeric-asc").innerHTML += points.sort(function(a, b) {return a - b})
+        document.getElementById("sort-numeric-dsc").innerHTML += points.sort(function(a, b) {return b - a})
+    </script>
+</body>
+</html>

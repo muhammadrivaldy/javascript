@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <p id="toString">toString : </p>
+    <p id="toExponential">toExponential : </p>
+    <p id="toFixed">toFixed : </p>
+    <p id="toPrecision">toPrecision : </p>
+    <p id="valueOf">valueOf : </p>
+
+    <script>
+        var x = 100;
+        document.getElementById("toString").innerHTML += x.toString() + " | " + (x+15).toString();
+        var x = 19.654;
+        document.getElementById("toExponential").innerHTML += x.toExponential(2) + " | " + x.toExponential(4);
+        document.getElementById("toFixed").innerHTML += x.toFixed(2) + " | " + x.toFixed(4);
+        document.getElementById("toPrecision").innerHTML += x.toPrecision(2) + " | " + x.toPrecision(4);
+        document.getElementById("valueOf").innerHTML += x.valueOf();
+    </script>
+</body>
+</html>

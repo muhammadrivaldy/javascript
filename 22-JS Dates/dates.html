@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+</head>
+<body>
+    <h2>Dates</h2>
+    <p id="example1">Example 1 : </p>
+    <p id="example2">Example 2 : </p>
+    <p id="example3">Example 3 : </p>
+    <p id="example4">Example 4 : </p>
+    <p id="example5">Example 5 : </p>
+
+    <script>
+        document.getElementById("example1").innerHTML += new Date();
+        document.getElementById("example2").innerHTML += new Date(2018, 11, 24, 13, 10, 15, 0);
+        document.getElementById("example3").innerHTML += new Date(2018, 11, 24, 13, 10);
+        document.getElementById("example4").innerHTML += new Date(2018, 11, 24, 10);
+        document.getElementById("example5").innerHTML += new Date(2018, 11);
+    </script>
+</body>
+</html>

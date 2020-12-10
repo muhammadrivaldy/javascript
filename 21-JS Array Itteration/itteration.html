@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Itteration</title>
+</head>
+<body>
+    <h2>Array Itteration</h2>
+    <p id="forEach">This example forEach : </p>
+    <p id="map">This example map : </p>
+    <p id="filter">This example filler : </p>
+
+    <script>
+        var arr = [12, 31, 41, 21, 11, 2, 1];
+        var foreach = [];
+        var functionItteration = {
+            foreach: function(value) {
+                foreach.push(value);
+            },
+            map: function(value) {
+                return value * 2;
+            },
+            filter: function(value) {
+                return value > 18;
+            }
+        };
+
+        arr.forEach(functionItteration.foreach);
+        document.getElementById("forEach").innerHTML += arr.join(",");
+        document.getElementById("map").innerHTML += arr.map(functionItteration.map);
+        document.getElementById("filter").innerHTML += arr.filter(functionItteration.filter);
+    </script>
+</body>
+</html>
